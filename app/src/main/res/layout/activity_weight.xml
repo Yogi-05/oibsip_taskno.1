@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LengthActivity">
+
+    <EditText
+        android:id="@+id/editTextKilograms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerInputUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText"
+        android:autofillHints="Input Units" />
+
+    <Spinner
+        android:id="@+id/spinnerOutputUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTo"
+        android:layout_alignParentEnd="true"
+        android:autofillHints="Output Units" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerOutputUnits"
+        android:layout_marginTop="16dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonConvert"
+        android:layout_marginTop="16dp"
+        android:text="Result"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKilograms"
+        android:text="From: "
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextText"
+        android:layout_below="@id/editTextKilograms"
+
+        android:layout_marginEnd="-326dp"
+        android:text="To: "
+        android:textSize="20sp" />
+
+</RelativeLayout>

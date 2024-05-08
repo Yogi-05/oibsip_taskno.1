@@ -1,0 +1,4 @@
+<resources>
+    <string name="select_unit" />
+    <string name="app_name">Unit Converter</string>
+</resources>
